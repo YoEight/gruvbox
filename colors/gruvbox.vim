@@ -1335,7 +1335,8 @@ hi! link markdownIdDeclaration markdownLinkText
 " }}}
 " Haskell: {{{
 
-hi! link haskellType GruvboxBlue
+" hi! link haskellType GruvboxBlue
+call s:HL('haskellType', s:blue, s:vim_bg, s:italic)
 hi! link haskellIdentifier GruvboxAqua
 hi! link haskellSeparator GruvboxFg4
 hi! link haskellDelimiter GruvboxOrange
@@ -1343,24 +1344,34 @@ hi! link haskellOperators GruvboxPurple
 
 hi! link haskellBacktick GruvboxOrange
 hi! link haskellStatement GruvboxPurple
-hi! link haskellConditional GruvboxPurple
+"hi! link haskellConditional GruvboxPurple
+call s:HL('haskellConditional', s:purple, s:vim_bg, s:italic)
 
 hi! link haskellLet GruvboxRed
+call s:HL('haskellLet', s:red, s:vim_bg, s:italic)
 hi! link haskellDefault GruvboxRed
-hi! link haskellWhere GruvboxRed
+"hi! link haskellWhere GruvboxRed
+call s:HL('haskellWhere', s:red, s:vim_bg, s:italic)
 hi! link haskellBottom GruvboxRedBold
-hi! link haskellImportKeywords GruvboxPurpleBold
-hi! link haskellDeclKeyword GruvboxOrange
-hi! link haskellDecl GruvboxOrange
-hi! link haskellDeriving GruvboxPurple
+"hi! link haskellImportKeywords GruvboxPurpleBold
+call s:HL('haskellImportKeywords', s:purple, s:vim_bg, s:bold . s:italic)
+"hi! link haskellDeclKeyword GruvboxOrange
+call s:HL('haskellDeclKeyword', s:orange, s:vim_bg, s:italic)
+"hi! link haskellDecl GruvboxOrange
+call s:HL('haskellDecl', s:orange, s:vim_bg, s:italic)
+"hi! link haskellDeriving GruvboxPurple
+call s:HL('haskellDeriving', s:purple, s:vim_bg, s:italic)
 hi! link haskellAssocType GruvboxAqua
 
 hi! link haskellNumber GruvboxAqua
-hi! link haskellPragma GruvboxRedBold
+"hi! link haskellPragma GruvboxRedBold
+call s:HL('haskellPragma', s:red, s:vim_bg, s:bold . s:italic)
  
-hi! link haskellTH GruvboxAquaBold
+"hi! link haskellTH GruvboxAquaBold
+call s:HL('haskellTH', s:aqua, s:vim_bg, s:bold . s:italic)
 hi! link haskellForeignKeywords GruvboxGreen
-hi! link haskellKeyword GruvboxRed
+"hi! link haskellKeyword GruvboxRed
+call s:HL('haskellKeyword', s:red, s:vim_bg, s:italic)
 hi! link haskellFloat GruvboxAqua
 hi! link haskellInfix GruvboxPurple
 hi! link haskellQuote GruvboxGreenBold
@@ -1372,7 +1383,9 @@ hi! link haskellQuotedType GruvboxRed
 hi! link haskellPreProc GruvboxFg4
 hi! link haskellTypeRoles GruvboxRedBold
 hi! link haskellTypeForall GruvboxRed
+call s:HL('haskellTypeForall', s:red, s:vim_bg, s:italic)
 hi! link haskellPatternKeyword GruvboxBlue
+call s:HL('haskellPatternKeyword', s:blue, s:vim_bg, s:italic)
 
 " }}}
 " Json: {{{
