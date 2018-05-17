@@ -1397,6 +1397,29 @@ hi! link jsonString GruvboxFg1
 
 " }}}
 
+" Rust: {{{
+call s:HL('rustKeyword', s:red, s:vim_bg, s:italic)
+call s:HL('rustSelf', s:purple, s:vim_bg, s:italic)
+call s:HL('rustSuper', s:purple, s:vim_bg, s:italic)
+call s:HL('rustStorage', s:orange, s:vim_bg, s:italic)
+call s:HL('rustConditional', s:red, s:vim_bg, s:italic)
+call s:HL('rustRepeat', s:red, s:vim_bg, s:italic)
+call s:HL('rustStructure', s:red, s:vim_bg, s:italic)
+call s:HL('rustAttribute', s:gb.bright_aqua, s:vim_bg, s:italic)
+call s:HL('rustDerive', s:gb.bright_aqua, s:vim_bg, s:italic)
+call s:HL('rustLifetime', s:orange, s:vim_bg, s:italic)
+call s:HL('rustPubScopeCrate', s:red, s:vim_bg, s:italic)
+call s:HL('rustIdentifier', s:blue, s:vim_bg, s:italic)
+call s:HL('rustArrowCharacter', s:orange, s:vim_bg, '')
+call s:HL('rustType', s:orange, s:vim_bg, s:italic)
+call s:HL('rustOperator', s:orange, s:vim_bg, s:italic)
+"call s:HL('rustStructure', s:blue, s:vim_bg, s:italic)
+"call s:HL('rustLabel', s:blue, s:vim_bg, s:italic)
+"s:gb.neutral_green
+"let g:terminal_color_2 = s:gb.neutral_green[0]
+
+"call s:HL('rustDerive', s:green, s:vim_bg, s:italic)
+" }}}
 
 " Functions -------------------------------------------------------------------
 " Search Highlighting Cursor {{{
